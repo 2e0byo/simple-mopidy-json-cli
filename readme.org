@@ -1,0 +1,25 @@
+#+Title: World's simplest mopidy cli
+
+The world's simplest mopidy cli.
+
+* Motivation
+
+  Mopidy can be controlled with jsonRPC. I use mopidy for music. I want to
+  toggle playing state and skip forward and back. For anything else there are
+  real clients. But these are actions I want to bind to keypresses.
+
+  When `mopidy-mpd` didn't work for me, and nor did any of the JSON0-based
+  mopidy scripts, I wrote this.
+
+* Dependencies
+  jq.  If you don't want to use jq, replace actual json parsing with `grep
+  "paused"`.  But who doesn't want jq installed?
+
+* Installation
+  Place in your path.
+
+* Usage
+  #+BEGIN_SRC bash
+mopidy_cli.sh playpause
+mopidy_cli.sh next # or prev
+  #+END_SRC
