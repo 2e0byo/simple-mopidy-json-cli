@@ -12,8 +12,8 @@ The world's simplest mopidy cli.
   mopidy scripts, I wrote this.
 
 * Dependencies
-  jq.  If you don't want to use jq, replace actual json parsing with ~grep
-  "paused"~.  But who doesn't want jq installed?
+  jq.  If you don't want to use jq, replace actual json parsing with
+  ~grep "paused"~.  But who doesn't want jq installed?
 
 * Installation
   Place in your path.
